@@ -13,7 +13,7 @@
 var levelOrder = function(root) {
     if(root===null) return [];
 
-    let res=[];
+    let result=[];
     let queue=[root];
 
     while(queue.length){
@@ -26,7 +26,7 @@ var levelOrder = function(root) {
             levelArr.push(curr.val);
             levelSize--;
         }
-        res.push(levelArr);
+        result.push(levelArr);
     }
-    return res;
+    return result;
 };
