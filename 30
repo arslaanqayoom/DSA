@@ -1,4 +1,4 @@
-var lastStoneWeight = function(stones) {
+let lastStoneWeight = function(stones) {
     const heap = new MaxPriorityQueue((stone) => stone);
     
     for (const stone of stones) {
